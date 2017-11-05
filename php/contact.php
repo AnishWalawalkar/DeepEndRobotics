@@ -39,7 +39,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@example.net";
-$address = "anantabose29@gmail.com";
+$address = "anish.sanjiv@gmail.com";
 
 
 // Configuration option.
