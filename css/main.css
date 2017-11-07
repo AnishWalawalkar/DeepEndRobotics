@@ -21,6 +21,11 @@ h1 {
 	font-size: 65px;
 	color: #2d3033;
 }
+h1#banner {
+	font-size: 28px;
+	color: #fff;
+	font-weight: 300;
+}
 h2 {
 	font-size: 40px;
 	color: #2d3033;
@@ -335,7 +340,7 @@ ul li {
 	$intro
 ========================================================================== */
 .intro {
-	background-color: #00aeda;
+	background-color: #028DBC;
 }
 .intro h3 {
 	color: #fff;
@@ -450,6 +455,7 @@ ul li {
 .person {
 	max-width: 270px;
 	text-align: center;
+	margin: auto;
 }
 .person img {
 	width: 150px;
@@ -499,7 +505,7 @@ ul li {
 	 Testimonials
 -------------------------------------------------------------------------------*/
 .testimonials {
-	background-color: #00aeda;
+	background-color: #028DBC;
 	position: relative;
 	text-align: center;
 }
