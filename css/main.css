@@ -660,3 +660,7 @@ padding:15px 30px 15px 30px;
 	font-size: 11px;
 	margin: 0 2px;
 }
+
+#intro-inner {
+	max-width: 100%;
+}
