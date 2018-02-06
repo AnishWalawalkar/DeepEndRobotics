@@ -59,6 +59,52 @@
         <!-- Post Content Column -->
         <div class="col-lg-10">
           <!-- Title -->
+          <h1 class="mt-4">Modelling & Simulation</h1>
+          <!-- Author -->
+          <p class="lead">by Kevin Jin</p>
+          <!-- Date/Time -->
+          <p>Posted on Febuary 6, 2017 at 05:00 PM</p>
+
+          <p>In the past months, the Controls Group has been working hard to converge upon a stabilizing controller for the design.
+            The submersible features three upwards-facing thrusters. One is mounted on the back and the two others flank the vehicle near
+            the front. Two additional forward-facing thrusters are also mounted on the flanks of the vehicle.</p>
+
+            <!-- Preview Image -->
+            <img class="img-fluid rounded" id="blog-img" src="images/isometric_rov.png" height="600" width="450" alt="">
+
+            <p>A non-linear discrete time state-space motion model of the system is created with the thrust of each
+              motor as input. The motion is modelled as constant velocity and with Euler Angles such that inertial
+              frame position, orientation and their respective velocity components are states. Approximations to non-linear
+              fluid drag forces from CFD analyses are considered.</p>
+
+              <p>The lack of sideways firing motors places non-holonomic constraints on the selected design. That is,
+                there are only five thrusters controlling five degrees of freedom, sacrificing the ability to move
+                directly sideways. Another constraint on the control system was that the onboard cameras must always remain
+                pointed downwards for useful video capture. </p>
+
+              <!-- Preview Image -->
+              <img class="img-fluid rounded" id="blog-img" src="images/block_diagram.png" height="600" width="450" alt="">
+
+              <p>The final control system was designed with a Linear Quadratic Regulator as the inner loop controller to control
+                Attitude and Z height. A non-linear steering controller was used as the outer loop controller to
+                converge on a given path in the X-Y plane. In addition, another simple velocity controller was used.
+                The motion model and controller network was simulated with MATLAB to follow some arbitrarily given waypoints.
+                Normally distributed random noise was added as disturbance to the state at every time step.</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/45Bo3QJpyc4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                <p>This next one shows the same controller trying to navigate a much more difficult path.</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/a7Y9zw5vtXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                <p>The next step is full state estimation with our available sensor suite. Stay tuned for more updates from the Controls Group!</p>
+                <hr>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Post Content Column -->
+        <div class="col-lg-10">
+          <!-- Title -->
           <h1 class="mt-4">Hitting the machine shop</h1>
           <!-- Author -->
           <p class="lead">by Mickey Wu</p>
@@ -87,7 +133,7 @@
                 weight. Moving forward, the mechanical team will be working on the interior of the AUV by
                 creating an electronic tray capable of mounting all the interior sensors and electronics
                 as well as the creating camera mounts for the camera domes. Stay tuned for more updates!</p>
-                <hr>          
+                <hr>
         </div>
       </div>
       <div class="row">
